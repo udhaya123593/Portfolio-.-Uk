@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Udhayakumar K | Professional Portfolio</title>
+
+<meta name="description"
+content="Official Portfolio of Udhayakumar K - Computer Science Engineering Student, Web Developer, Python Programmer and DevOps Enthusiast">
+
+<meta name="keywords"
+content="Udhayakumar K, Portfolio, Web Developer, Python Programmer, DevOps, Jaya Engineering College">
+
+<meta name="author"
+content="Udhayakumar K">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+
+--bg:#050816;
+--bg2:#0b1830;
+--card:#111c44;
+--text:#ffffff;
+--secondary:#b6c2d1;
+--accent:#00d9ff;
+--shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.light-theme{
+
+--bg:#f5f7fa;
+--bg2:#ffffff;
+--card:#ffffff;
+--text:#111111;
+--secondary:#555555;
+--accent:#0077ff;
+--shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+transition:.4s ease;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+section{
+
+padding:100px 0;
+
+}
+
+.section-title{
+
+color:var(--accent);
+font-size:14px;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:20px;
+
+}
+
+h1{
+
+font-size:72px;
+line-height:1.1;
+
+}
+
+h2{
+
+font-size:42px;
+margin-bottom:20px;
+
+}
+
+h3{
+
+font-size:24px;
+margin-bottom:10px;
+
+}
+
+p{
+
+color:var(--secondary);
+
+}
+
+.highlight{
+
+color:var(--accent);
+
+}
+
+/* HEADER */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(5,8,22,.95);
+backdrop-filter:blur(12px);
+z-index:1000;
+
+}
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:800;
+color:var(--accent);
+
+}
+
+.nav-links{
+
+display:flex;
+list-style:none;
+gap:25px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+color:var(--text);
+font-weight:500;
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--accent);
+
+}
+
+.theme-toggle{
+
+background:var(--accent);
+border:none;
+padding:10px 16px;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+
+}
+
+.hero-content{
+
+max-width:800px;
+
+}
+
+.hero-content h1{
+
+margin-bottom:20px;
+
+}
+
+.hero-content h2{
+
+font-size:30px;
+font-weight:500;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+margin:25px 0;
+
+}
+
+.hero-buttons{
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:14px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:var(--accent);
+color:#000;
+
+}
+
+.btn-outline{
+
+border:2px solid var(--accent);
+color:var(--accent);
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ABOUT */
+
+.about{
+
+background:var(--bg2);
+
+}
+
+.about-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.about-card{
+
+background:var(--card);
+padding:30px;
+border-radius:15px;
+box-shadow:var(--shadow);
+
+}
+
+.about-card ul{
+
+padding-left:20px;
+
+}
+
+.about-card li{
+
+margin-bottom:12px;
+
+}
+
+/* SKILLS */
+
+.skills-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.skill-card{
+
+background:var(--card);
+padding:25px;
+border-radius:15px;
+box-shadow:var(--shadow);
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-6px);
+transition:.3s;
+
+}
+
+.progress{
+
+width:100%;
+height:8px;
+background:#222;
+border-radius:50px;
+margin-top:10px;
+
+}
+
+.progress-bar{
+
+height:100%;
+background:var(--accent);
+border-radius:50px;
+
+}
+
+.python{width:90%;}
+.html{width:95%;}
+.css{width:92%;}
+.devops{width:80%;}
+/* PROJECTS */
+
+.projects-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+
+}
+
+.project-card{
+
+background:var(--card);
+padding:30px;
+border-radius:15px;
+box-shadow:var(--shadow);
+transition:.3s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.tags{
+
+margin-top:15px;
+
+}
+
+.tag{
+
+display:inline-block;
+background:rgba(0,217,255,.15);
+color:var(--accent);
+padding:8px 12px;
+border-radius:6px;
+margin:5px;
+font-size:13px;
+
+}
+
+/* TIMELINE */
+
+.timeline{
+
+border-left:3px solid var(--accent);
+padding-left:30px;
+
+}
+
+.timeline-item{
+
+margin-bottom:40px;
+position:relative;
+
+}
+
+.timeline-item::before{
+
+content:'';
+position:absolute;
+left:-39px;
+top:5px;
+width:15px;
+height:15px;
+background:var(--accent);
+border-radius:50%;
+
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.cert-card{
+
+background:var(--card);
+padding:25px;
+border-radius:15px;
+box-shadow:var(--shadow);
+
+}
+
+/* CONTACT */
+
+.contact-form{
+
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:15px;
+border:none;
+border-radius:10px;
+background:var(--card);
+color:var(--text);
+font-size:16px;
+
+}
+
+.contact-form button{
+
+padding:15px;
+background:var(--accent);
+border:none;
+border-radius:10px;
+font-weight:700;
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+padding:40px 0;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+h1{
+
+font-size:48px;
+
+}
+
+h2{
+
+font-size:32px;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav class="navbar">
+
+<div class="logo">UK</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<button class="theme-toggle" id="themeBtn">
+🌙 Theme
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="section-title">
+WELCOME TO MY PORTFOLIO
+</div>
+
+<h1>
+UDHAYAKUMAR
+<span class="highlight">K</span>
+</h1>
+
+<h2>
+Computer Science and Engineering Student
+</h2>
+
+<p>
+
+Web Developer • Python Programmer • DevOps Enthusiast • Digital Marketing Enthusiast
+
+<br><br>
+
+Currently pursuing B.E. Computer Science and Engineering at
+Jaya Engineering College with a CGPA of 8.65.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn btn-primary">
+View Projects
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Contact Me
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<div class="container">
+
+<div class="section-title">
+ABOUT ME
+</div>
+
+<div class="about-grid">
+
+<div>
+
+<h2>
+Building Technology That Creates Impact
+</h2>
+
+<p>
+
+I am Udhayakumar K, a Computer Science and Engineering student passionate about software development, cloud computing, DevOps, web technologies and artificial intelligence.
+
+Currently working as a Web Development Intern and continuously improving my skills through real-world projects and practical learning.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<ul>
+
+<li>B.E. Computer Science and Engineering</li>
+
+<li>Jaya Engineering College</li>
+
+<li>CGPA : 8.65</li>
+
+<li>Web Development Intern</li>
+
+<li>Python Programmer</li>
+
+<li>DevOps Enthusiast</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+TECHNICAL SKILLS
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3>Python</h3>
+
+<div class="progress">
+<div class="progress-bar python"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>HTML5</h3>
+
+<div class="progress">
+<div class="progress-bar html"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>CSS3</h3>
+
+<div class="progress">
+<div class="progress-bar css"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>DevOps</h3>
+
+<div class="progress">
+<div class="progress-bar devops"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+FEATURED PROJECTS
+</div>
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Professional portfolio website developed using HTML5, CSS3,
+JavaScript, accessibility standards and responsive design principles.
+</p>
+
+<div class="tags">
+<span class="tag">HTML5</span>
+<span class="tag">CSS3</span>
+<span class="tag">Responsive</span>
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>Student Management System</h3>
+
+<p>
+Web application for managing student records, attendance,
+academic information and reports.
+</p>
+
+<div class="tags">
+<span class="tag">Python</span>
+<span class="tag">SQL</span>
+<span class="tag">Database</span>
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>DevOps Pipeline Project</h3>
+
+<p>
+Automated CI/CD pipeline implementation using Azure DevOps,
+GitHub and deployment automation.
+</p>
+
+<div class="tags">
+<span class="tag">Azure DevOps</span>
+<span class="tag">Git</span>
+<span class="tag">CI/CD</span>
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>Python Automation Scripts</h3>
+
+<p>
+Collection of automation scripts built using Python for
+productivity improvement and task automation.
+</p>
+
+<div class="tags">
+<span class="tag">Python</span>
+<span class="tag">Automation</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-title">
+EXPERIENCE
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Web Development Intern</h3>
+
+<p>
+<strong>Thiranex Technologies</strong>
+<br>
+2026 - Present
+</p>
+
+<p>
+Working on modern web development projects using HTML5,
+CSS3, responsive design techniques and accessibility standards.
+Learning professional software development practices and
+industry workflows.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<div class="container">
+
+<div class="section-title">
+EDUCATION
+</div>
+
+<h2>Academic Background</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Bachelor of Engineering</h3>
+
+<p>
+Computer Science and Engineering
+</p>
+
+<p>
+<strong>Jaya Engineering College</strong>
+</p>
+
+<p>
+CGPA : 8.65
+</p>
+
+<p>
+Expected Graduation : 2027
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<div class="container">
+
+<div class="section-title">
+CERTIFICATIONS
+</div>
+
+<h2>Certifications & Achievements</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+
+<h3>Web Development Internship</h3>
+
+<p>
+Successfully completed Web Development Internship tasks
+focused on HTML5, CSS3, Accessibility and Responsive Design.
+</p>
+
+</div>
+
+<div class="cert-card">
+
+<h3>Git & GitHub</h3>
+
+<p>
+Hands-on experience in version control,
+repository management and collaborative development.
+</p>
+
+</div>
+
+<div class="cert-card">
+
+<h3>Python Programming</h3>
+
+<p>
+Developed Python projects and automation scripts
+for academic and practical applications.
+</p>
+
+</div>
+
+<div class="cert-card">
+
+<h3>Artificial Intelligence</h3>
+
+<p>
+Completed AI learning programs and explored
+machine learning fundamentals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+GET IN TOUCH
+</div>
+
+<h2>
+Let's Build Something Amazing Together
+</h2>
+
+<p style="margin-bottom:30px;">
+Feel free to connect with me for internship opportunities,
+software development projects, collaborations and technology discussions.
+</p>
+
+<form class="contact-form"
+aria-label="Contact Form">
+
+<input
+type="text"
+name="name"
+placeholder="Enter Your Name"
+required
+aria-label="Name">
+
+<input
+type="email"
+name="email"
+placeholder="Enter Your Email"
+required
+aria-label="Email">
+
+<textarea
+name="message"
+rows="6"
+placeholder="Enter Your Message"
+required
+aria-label="Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+<div style="margin-top:50px;text-align:center;">
+
+<h3>Contact Information</h3>
+
+<p>
+📧 Email:
+<a href="mailto:udhayakudhaya307@gmail.com"
+style="color:var(--accent);">
+udhayakudhaya307@gmail.com
+</a>
+</p>
+
+<p>
+📱 Phone:
+<a href="tel:+918122831889"
+style="color:var(--accent);">
+8122831889
+</a>
+</p>
+
+<p>
+💼 LinkedIn:
+<a href="https://www.linkedin.com/in/udhaya-kumar-k-9217a52a5"
+target="_blank"
+style="color:var(--accent);">
+View Profile
+</a>
+</p>
+
+<p>
+💻 GitHub:
+<a href="https://github.com/udhaya123593"
+target="_blank"
+style="color:var(--accent);">
+View Repository
+</a>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>
+UDHAYAKUMAR K
+</h3>
+<br>
+
+<p>
+© 2026 Udhayakumar K.
+All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+</main>
+
+<script>
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+
+document.body.classList.toggle("light-theme");
+
+if(document.body.classList.contains("light-theme"))
+{
+themeBtn.innerHTML = "☀️ Light";
+}
+else
+{
+themeBtn.innerHTML = "🌙 Theme";
+}
+
+});
+
+window.addEventListener("scroll", () => {
+
+const header =
+document.querySelector("header");
+
+if(window.scrollY > 50)
+{
+header.style.boxShadow =
+"0 5px 20px rgba(0,0,0,.3)";
+}
+else
+{
+header.style.boxShadow = "none";
+}
+
+});
+
+</script>
+
+</body>
+</html>
